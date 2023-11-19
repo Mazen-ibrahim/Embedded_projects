@@ -180,7 +180,7 @@ void CLCD_voidWriteNumber(u32 Copy_u32Number)
 
 void CLCD_voidWrite_2Lines(const char*Line1,const char*Line2)
 {
-	CLCD_voidSendCommand(0b0000001);
+	CLCD_voidSendCommand(CLEAR_DISPLAY);
 
 	CLCD_GoToXY(0,0);
 	CLCD_voidSendString(Line1);
@@ -192,7 +192,7 @@ void CLCD_voidWrite_2Lines(const char*Line1,const char*Line2)
 
 void CLCD_voidWrite_3Lines(const char*Line1,const char*Line2,const char*Line3)
 {
-	CLCD_voidSendCommand(0b0000001);
+	CLCD_voidSendCommand(CLEAR_DISPLAY);
 
 	CLCD_GoToXY(0,0);
 	CLCD_voidSendString(Line1);
@@ -208,7 +208,7 @@ void CLCD_voidWrite_3Lines(const char*Line1,const char*Line2,const char*Line3)
 
 void CLCD_voidWrite_4Lines(const char*Line1,const char*Line2,const char*Line3,const char*Line4)
 {
-	CLCD_voidSendCommand(0b0000001);
+	CLCD_voidSendCommand(CLEAR_DISPLAY);
 
 	CLCD_GoToXY(0,0);
 	CLCD_voidSendString(Line1);
